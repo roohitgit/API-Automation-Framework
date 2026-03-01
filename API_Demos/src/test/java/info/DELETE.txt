@@ -1,0 +1,17 @@
+https://api.restful-api.dev/objects/{id}
+
+Delete an object
+
+Description
+Removes an object permanently by specifying its unique ID.
+
+Parameters
+• id (string) (required) - The unique ID of the object to remove from the collection.
+
+Request url example
+https://api.restful-api.dev/objects/6
+
+Response body example
+{
+  "message": "Object with id = 6, has been deleted."
+}

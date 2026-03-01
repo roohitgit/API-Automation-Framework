@@ -1,0 +1,29 @@
+https://api.restful-api.dev/objects
+
+Add a new object
+
+Description
+Creates and stores a new object using the data provided in the request body.
+
+Request body example
+{
+  "name": "Apple MacBook Pro 16",
+  "data": {
+    "year": 2019,
+    "price": 1849.99,
+    "CPU model": "Intel Core i9",
+    "Hard disk size": "1 TB"
+  }
+}
+Response body example
+{
+  "id": "7",
+  "name": "Apple MacBook Pro 16",
+  "data": {
+    "year": 2019,
+    "price": 1849.99,
+    "CPU model": "Intel Core i9",
+    "Hard disk size": "1 TB"
+  },
+  "createdAt": "2022-11-21T20:06:23.986Z"
+}
