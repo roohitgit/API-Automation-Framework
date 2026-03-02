@@ -9,10 +9,12 @@ public class ExtentManager {
 
     public static ExtentReports getInstance() {
 
+    	System.getProperty("user.dir");
+    	
         if (extent == null) {
 
             ExtentSparkReporter spark =
-                    new ExtentSparkReporter("ExtentReport.html");
+                    new ExtentSparkReporter("docs/index.html");
 
             extent = new ExtentReports();
             extent.attachReporter(spark);
