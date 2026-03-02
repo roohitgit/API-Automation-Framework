@@ -1,0 +1,29 @@
+https://api.restful-api.dev/objects/{id}
+
+Partially update an object
+
+Description
+Applies partial modifications to an object by updating only specific fields provided in the request body.
+
+Parameters
+• id (string) (required) - The ID of the object to modify. Only specified fields will be updated.
+
+Request url example
+https://api.restful-api.dev/objects/7
+
+Request body example
+{
+  "name": "Apple MacBook Pro 16 (Updated Name)"
+}
+Response body example
+{
+  "id": "7",
+  "name": "Apple MacBook Pro 16 (Updated Name)",
+  "data": {
+    "year": 2019,
+    "price": 1849.99,
+    "CPU model": "Intel Core i9",
+    "Hard disk size": "1 TB"
+  },
+  "updatedAt": "2022-12-25T21:09:46.986Z"
+}
